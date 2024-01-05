@@ -1,0 +1,32 @@
+li {
+    font-family: MARIO Font v3_2 Solid;
+    font-size: large;
+    color: white;
+    text-shadow: -2px 2px black;
+    text-align: center;
+}
+
+body {
+    background-image: linear-gradient(#ff0000, #ffa500);
+}
+
+@font-face {
+    font-family: MARIO Font v3_2 Solid;
+    src: url("font/MARIO_Font_v3_Solid.otf") format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+* { font-family:MARIO Font v3_2 Solid; }
+
+.shadowtext {
+    text-shadow: -2px 2px rgb(0, 0, 0);
+    color:white;
+    font-size:x-large;
+}
+
+iframe {
+    display: block;
+    border-style:none;
+    margin: 0 auto
+}
