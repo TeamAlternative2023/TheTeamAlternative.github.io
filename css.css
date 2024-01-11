@@ -27,6 +27,6 @@ body {
 
 iframe {
     display: block;
-    border-style:none;
+    border: 5px solid black;
     margin: 0 auto
 }
