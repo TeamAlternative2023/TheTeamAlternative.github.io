@@ -46,7 +46,7 @@ hr {
 }
 
 button {
-    background-color: transparent;
+    background-color: linear-gradient(rgb(255, 81, 0), red);
     background-repeat: no-repeat;
     border-width: 3px;
     border-color:black;
