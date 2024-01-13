@@ -17,7 +17,7 @@ body {
     font-style: normal;
 }
 
-* { font-family:MARIO Font v3_2 Solid; }
+* { font-family:MARIO Font v3_2 Solid; text-align: center; }
 
 .shadowtext {
     text-shadow: -2px 2px rgb(0, 0, 0);
@@ -29,5 +29,29 @@ iframe {
     display: block;
     border: 5px solid rgb(255, 51, 0);
     margin: 0 auto;
-    box-shadow: 5px -10px black;
+    box-shadow: 0px 0px 80px black;
+}
+
+.imgHeader {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+hr {
+    height: 2px;
+    color: black;
+    background-color: black;
+    border-width:0;
+}
+
+button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border-width: 3px;
+    border-color:black;
+    border-style: solid;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
 }
