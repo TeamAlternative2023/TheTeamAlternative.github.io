@@ -61,3 +61,7 @@ button {
 .social:hover {
     transform: scale(1.1);
 }
+
+h1 {
+    font-size: xx-large;
+}
