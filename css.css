@@ -79,6 +79,19 @@ h1 {
     position: relative;
 }
 
+.specialthanks {
+    width: 8vw;
+    min-width: calc(64px * var(--mobile-font-scale));
+    display: inline-block;
+    padding-right: 1.5vw;
+    padding-left: 1.5vw;
+    padding-bottom: 1.5vw;
+    margin: 0 auto;
+    clear: left;
+    text-align: center;
+    position: relative;
+}
+
 .member {
     border-radius: 50%;
     width: 8vw;
