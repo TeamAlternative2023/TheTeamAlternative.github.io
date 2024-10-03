@@ -7,7 +7,10 @@ li {
 }
 
 body {
-    background-image: linear-gradient(#ff0000, #ffa500);
+    background-image: url(/content/background.png);
+    background-size: 104px;
+    background-repeat: repeat;
+    background-position: center;
 }
 
 @font-face {
@@ -67,41 +70,42 @@ h1 {
 }
 
 .team {
-    width: 8vw;
-    min-width: calc(64px * var(--mobile-font-scale));
-    display: inline-block;
-    padding-right: 1.5vw;
-    padding-left: 1.5vw;
-    padding-bottom: 1.5vw;
-    margin: 0 auto;
-    clear: left;
-    text-align: center;
-    position: relative;
+	width: 8vw;
+	min-width: calc(64px * var(--mobile-font-scale));
+	display: inline-block;
+	padding-right: 1vw;
+	padding-left: 1vw;
+	padding-bottom: 0vw;
+	margin: 0 auto;
+	clear: left;
+	text-align: left;
+	position: relative;
 }
 
 .specialthanks {
-    width: 8vw;
-    min-width: calc(64px * var(--mobile-font-scale));
-    display: inline-block;
-    padding-right: 1.5vw;
-    padding-left: 1.5vw;
-    padding-bottom: 1.5vw;
-    margin: 0 auto;
-    clear: left;
-    text-align: center;
-    position: relative;
+	width: 8vw;
+	min-width: calc(64px * var(--mobile-font-scale));
+	display: inline-block;
+	padding-right: 1vw;
+	padding-left: 1vw;
+	padding-bottom: 0vw;
+	margin: 0 auto;
+	clear: left;
+	text-align: center;
+	position: relative;
 }
 
 .member {
     border-radius: 50%;
     width: 8vw;
     min-width: calc(64px * var(--mobile-font-scale));
-    background-color: #36393f70;
+    background-color: #ffffff00;
 
 }
 
 .nameWrapper {
     width: 100%;
+    overflow: hidden;
 }
 
 .memberName {
