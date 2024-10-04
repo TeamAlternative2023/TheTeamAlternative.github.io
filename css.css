@@ -66,22 +66,23 @@ h1 {
 	width: 8vw;
 	min-width: calc(64px * var(--mobile-font-scale));
 	display: inline-block;
-	padding-right: 1vw;
-	padding-left: 1vw;
-	padding-bottom: 0vw;
+	padding-right: 1.5vw;
+	padding-left: 1.5vw;
+	padding-bottom: 1.5vw;
 	margin: 0 auto;
 	clear: left;
-	text-align: left;
+	text-align: center;
 	position: relative;
+
 }
 
 .specialthanks {
 	width: 8vw;
 	min-width: calc(64px * var(--mobile-font-scale));
 	display: inline-block;
-	padding-right: 1vw;
-	padding-left: 1vw;
-	padding-bottom: 0vw;
+	padding-right: 1.5vw;
+	padding-left: 1.5vw;
+	padding-bottom: 1.5vw;
 	margin: 0 auto;
 	clear: left;
 	text-align: center;
@@ -89,21 +90,22 @@ h1 {
 }
 
 .member {
-    border-radius: 50%;
-    width: 8vw;
-    min-width: calc(64px * var(--mobile-font-scale));
-    background-color: #ffffff00;
-
+	border-radius: 50%;
+	width: 8vw;
+	min-width: calc(64px * var(--mobile-font-scale));
+	background-color: #36393f70;
+	overflow: hidden;
 }
 
 .nameWrapper {
-    width: 100%;
-    overflow: hidden;
+	width: 100%;
+	overflow: hidden;
 }
 
 .memberName {
-    /*animation: floatText 5s infinite linear;*/
-    text-shadow: -2px 2px rgb(0, 0, 0);
-    color:white;
-    font-size:x-large;    
+	margin-top: 0;
+	white-space: nowrap;
+    font-size: large;
+    color: white;
+    text-shadow: -2px 2px black;
 }
