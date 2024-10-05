@@ -109,3 +109,86 @@ h1 {
     color: white;
     text-shadow: -2px 2px black;
 }
+
+.item {
+	top: 0;
+	padding-top: 0;
+	margin-top: 0;
+	bottom: 0;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	max-height: 0px;
+	overflow: hidden;
+}
+
+.item.current-item {
+	max-height: 10000px;
+	transition: 5s ease;
+}
+
+.pageparts-flex::before, .pageparts::before {
+	content: "";
+	top: 0;
+    left: 0;
+	height: 100%;
+	width: 100%;
+    position: absolute;
+	z-index: -200;
+	mix-blend-mode: color;
+}
+.pageparts-flex::after, .pageparts::after {
+	content: "";
+	top: 0;
+    left: 0;
+	height: 100%;
+	width: 100%;
+    position: absolute;
+	z-index: -200;
+	mix-blend-mode: screen;
+}
+
+.pageparts-flex {
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	white-space: nowrap;
+	-webkit-box-shadow: inset 0px 20px 15px -15px rgba(0,0,0,0.65), inset 0px -20px 15px -15px rgba(0,0,0,0.65);
+	-moz-box-shadow: inset 0px 20px 15px -15px rgba(0,0,0,0.65), inset 0px -20px 15px -15px rgba(0,0,0,0.65);
+	box-shadow: inset 0px 20px 15px -15px rgba(0,0,0,0.65), inset 0px -20px 15px -15px rgba(0,0,0,0.65);
+	padding: 1.5em 0;
+	margin: 2em 0;
+}
+
+
+.pageparts {
+	position: relative;
+}
+
+.pageparts.pageparts-mobile::before {
+	content: none;
+}
+.pageparts-flex.pageparts-mobile::before {
+	content: none;
+}
+
+.pageparts.pageparts-mobile::after {
+	content: none;
+}
+.pageparts-flex.pageparts-mobile::after {
+	content: none;
+}
+
+.container {
+	white-space: normal;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-top: -10px;
+	margin-bottom: 5px;
+	text-align: center;
+	box-sizing: border-box;
+	flex: 2;
+}
+
+.row {
+	text-align: center;
+}

@@ -5,6 +5,7 @@
     <link rel="shortcut icon" type="content/x-icon" href="content/favicon.ico">
     <link rel="stylesheet" href="css.css">
     <title>Super Mario Bros Extreme Adventure</title>
+    <script src="/script/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -40,5 +41,65 @@
         <li>Custom Codes</li>
         <li>Game Translated In: Italian, English, Japanese, Russian and Spanish</li>
     </p>
+
+    <script>
+        function startMarquee() {
+
+            var menuItemWidth = $(this).width();
+            var listItemWidth = $(this).parent().parent().width();
+            console.log(menuItemWidth);
+            console.log(listItemWidth);
+            if (menuItemWidth > listItemWidth) {
+
+                var scrollDistance = menuItemWidth - listItemWidth;
+                var listItem = $(this).parent();
+                // Stop any current animation
+                listItem.stop();
+
+                // Start animating the left scroll position over 3 seconds, using a smooth linear motion
+                listItem.animate({ scrollLeft: scrollDistance }, 'slow', 'swing');
+            }
+        }
+
+        function stopMarquee() {
+            var listItem = $(this).parent();
+
+            // Stop any current animation
+            listItem.stop();
+
+            // Start animating the left scroll position quickly, with a bit of a swing to the animation.
+            // This will make the item seem to 'whip' back to it's starting point
+            listItem.animate({ scrollLeft: 0 }, 'medium', 'swing');
+        }
+
+        var isMobile = (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()));
+        //alert(isMobile);
+
+        if (isMobile) {
+            document.documentElement.style.setProperty("--mobile-font-scale", 1.9);
+            document.documentElement.style.setProperty("--mobile-navbar-padding", 3);
+            $('.pageparts').each(function (index) { $(this).addClass('pageparts-mobile') });
+            $('.pageparts-flex').each(function (index) { $(this).addClass('pageparts-mobile') });
+        }
+
+        // hover() calls the first function when mousing over the element, and the second function when mousing out of it
+        $('.memberName').hover(startMarquee, stopMarquee);
+
+        $(document).ready(function () {
+            $('.team').click(function (e) {
+                //alert( $('.team').index(this) );
+                //$('.current-item').each(function(index) {$(this).removeClass('current-item')});
+                //$('.item').eq($('.team').index(this)).addClass('current-item');
+            });
+        });
+        $(document).ready(function () {
+            $('.specialthanks').click(function (e) {
+                //alert( $('.team').index(this) );
+                //$('.current-item').each(function(index) {$(this).removeClass('current-item')});
+                //$('.item').eq($('.team').index(this)).addClass('current-item');
+            });
+        });
+    </script>
+
 </body>
 <html>
